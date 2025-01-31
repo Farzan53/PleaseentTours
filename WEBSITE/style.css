@@ -1,0 +1,1463 @@
+/* Navbar Styling */
+.navbar {
+  backdrop-filter: blur(15px); 
+  height: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 15px;
+  transition: all 0.3s ease; /* Smooth transitions */
+  position: absolute;
+  /* word-spacing: 50px; */
+  display: block;
+  
+}
+
+.nav-item{
+
+padding-left: -55px;
+
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  margin-right: 700px;
+  /* transition: color 0.3s; */
+
+  
+}
+
+.navbar-brand:hover {
+  color: #ffc107; /* Yellow color on hover */
+  
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+  
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000; /* Yellow color */
+  transform: scale(1.3); /* Slight zoom on hover */
+  /* border-radius: 20px;
+  border: 2px solid black;
+  background-color: whitesmoke; */
+
+}
+
+.navbar-nav .nav-link.active {
+  color: #00f7ff; /* Highlight for the active link */
+  border-bottom: 3px solid #00f7ff; /* Underline for the active link */
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #ffc107; /* Yellow background for toggler */
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+}
+
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow */
+  transition: all 0.3s;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+  color: #343a40; /* Dark text */
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background: #ffc107; /* Yellow highlight */
+  color: white;
+}
+
+/* Responsive Behavior */
+
+@media only screen and (max-width: 991px) {
+  /* Changes the navbar layout for smaller screens */
+ .navbar {
+   position: relative; 
+   top: 0; 
+   height: 60px; 
+   padding: 10px 15px; 
+   margin: 0; 
+   box-shadow: none; 
+   transition: all 0.3s ease; 
+ }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Changes the navbar layout for smaller screens */
+ .navbar {
+   position: relative; 
+   top: 0; 
+   height: 60px; 
+   padding: 10px 15px; 
+   margin: 0; 
+   box-shadow: none; 
+   transition: all 0.3s ease; 
+ }
+}
+
+
+@media only screen and (max-width: 576px) {
+  /* Changes the navbar layout for smaller screens */
+ .navbar {
+   position: relative; 
+   top: 0; 
+   height: 60px; 
+   padding: 10px 15px; 
+   margin: 0; 
+   box-shadow: none; 
+   transition: all 0.3s ease; 
+ }
+}
+
+
+
+@media only screen and (max-width: 455px) {
+  /* Changes the navbar layout for smaller screens */
+ .navbar {
+   position: relative; 
+   top: 0; 
+   height: 60px; 
+   padding: 10px 15px; 
+   margin: 0; 
+   box-shadow: none; 
+   transition: all 0.3s ease; 
+ }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL-INDICATORS */
+
+
+.carousel {
+  width: 100%; /* Ensures the carousel takes the full width of the screen */
+  height: auto; /* Allows the height to adjust dynamically */
+  overflow: hidden; /* Prevents overflow issues on small screens */
+}
+
+.carousel-indicators {
+  display: flex; /* Makes the indicators evenly spaced */
+  justify-content: center; /* Centers the indicators horizontally */
+  align-items: center; /* Vertically centers the indicators */
+  gap: 0px; /* Adds space between indicators */
+  margin: 0 auto; /* Centers the indicators */
+  padding: 10px 0; /* Adds padding above and below indicators */
+  border-radius: 20px; /* Rounds the corners */
+  left: -1300px;
+  height: 50px;
+}
+
+.carousel-indicators button {
+  width: 15px; /* Adjust size for better visibility */
+  height: 15px; /* Equal height */
+  background-color: #000; /* Default color for the indicators */
+  border: 2px solid #fff; /* Makes the line bold */
+  opacity: 0.8; /* Slightly transparent for a modern look */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  margin-top: -120px;
+  
+}
+
+.carousel-indicators button.active {
+  background-color: #fff; /* Active indicator color */
+  opacity: 1; /* Fully visible */
+}
+
+.carousel-indicators button:hover {
+  background-color: #555; /* Changes color on hover */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .carousel-indicators {
+    left: 800px; /* Adjusts position for smaller screens */
+    top: 840px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    left: 300px; /* Positions indicators for tablets */
+    gap: 0px; /* Reduces space between indicators */
+  }
+
+  .carousel-indicators button {
+    width: 12px; /* Smaller buttons for small screens */
+    height: 12px;
+    border: 1px solid #fff; /* Thinner border */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-indicators {
+    left: 50px; /* Positions indicators on the left for mobile */
+    flex-direction: row; /* Keeps the indicators in one line */
+    gap: 0px; /* Further reduce gap for very small screens */
+  }
+
+  .carousel-indicators button {
+    width: 10px; /* Further reduce button size for small screens */
+    height: 10px;
+  }
+}
+
+
+
+
+
+
+/* HEADING 1 */
+
+
+.display-1{
+
+      position: absolute; /* Or use 'fixed' */
+      top: -600px; /* 0 pixels from the top */
+      left: -200px; /* Optional, to align it with the left */
+      color: white; /* White text color */
+      font-size: 210px; /* Large font size */
+      text-align: center; /* Center text */
+      transform-origin: center; /* Rotate around the center of the element */
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  .display-1 {
+      top: -330px; /* Adjust position for smaller screens */
+      left: -60px; /* Center align horizontally */
+      font-size: 110px; /* Smaller font size */
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+.display-1 {
+      top: -100px; /* Adjust position for smaller screens */
+      left: -50px; /* Center align horizontally */
+      font-size: 60px; /* Even smaller font size for very small screens */
+      text-align: center;
+  }
+}
+
+
+
+/* HI HEADING  */
+
+
+.carousel-caption #hi{
+padding-top: 180px;
+
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 768px) { /* For tablets and smaller screens */
+.carousel-caption #hi {
+      top: -420px; /* Adjust position for smaller screens */
+      left: -50px; /* Center align horizontally */
+      font-size: 110px; /* Smaller font size */
+      text-align: center;
+      
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+.carousel-caption #hi {
+      top: -130px; /* Adjust position for smaller screens */
+      left: 0px; /* Center align horizontally */
+      font-size: 60px; /* Even smaller font size for very small screens */
+      text-align: center;
+  }
+}
+
+
+/* HEADING 2 */
+
+
+
+.display-2{
+      position: absolute; /* Or use 'fixed' */
+      top: -200px; /* 0 pixels from the top */
+      left: -200px; /* Optional, to align it with the left */
+      right: 800px;
+      color: white; /* White text color */
+      font-size: 40px; /* Large font size */
+      text-align: center; /* Center text */
+      transform-origin: center; /* Rotate around the center of the element */
+      word-spacing: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+}
+
+
+
+
+/* Responsive styles for smaller screens */
+
+
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  .display-2 {
+    top: -100px;
+    left: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    white-space: nowrap; /* Ensures the text stays in one line */
+    overflow: hidden; /* Hides the overflowing part */
+    border-right: 2px solid black; /* Simulates a blinking cursor */
+    animation: typing-and-erasing 4s steps(15, end) infinite, blink 0.5s step-end infinite;
+    
+    
+    
+  }
+}
+
+/* Typing and Erasing Animation */
+  @keyframes typing-and-erasing {
+    0% { width: 0; }         /* Start with no text */
+    25% { width: 100%; }     /* Full text is typed */
+    50% { width: 100%; }     /* Pause with full text */
+    75% { width: 0; }        /* Erase the text */
+    100% { width: 0; }       /* Back to no text */
+  }
+
+  /* Blinking Cursor Animation */
+  @keyframes blink {
+    50% { border-color: transparent; }
+    100% { border-color: black; }
+  }
+
+
+@media (max-width: 480px) { /* For mobile phones */
+.display-2 {
+      top: -50px;
+      left: -20px;
+      font-size: 10px;
+      font-weight: bold;
+      color: black;
+      display: inline-block;
+      white-space: nowrap; /* Ensures the text stays in one line */
+      overflow: hidden; /* Hides the overflowing part */
+      border-right: 2px solid black; /* Simulates a blinking cursor */
+      animation: typing-and-erasing 4s steps(10, end) infinite, blink 0.5s step-end infinite;
+  }
+}
+
+/* Typing and Erasing Animation */
+@keyframes typing-and-erasing {
+0% { width: 0; }         /* Start with no text */
+25% { width: 100%; }     /* Full text is typed */
+50% { width: 100%; }     /* Pause with full text */
+75% { width: 0; }        /* Erase the text */
+100% { width: 0; }       /* Back to no text */
+}
+
+
+/* Blinking Cursor Animation */
+
+@keyframes blink {
+50% { border-color: transparent; }
+100% { border-color: black; }
+}
+
+
+/* BUTTON  */
+
+
+
+.custom-button {
+  /* display: inline-flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 10px 30px;
+  background-color: #00a7d1; /* Button background color */
+  color: white; /* Text color */
+  font-weight: bold;
+  font-size: 29px;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  text-transform: uppercase; /* Make text uppercase */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  margin-right: 1000px;
+  margin-left: -100px;
+  position: absolute;
+  top: -100px;
+  left: 70px;
+  transform: translateX(-50%);
+
+
+
+
+  
+}
+
+.custom-button:hover {
+  background-color: #008bb2; /* Darker shade for hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.custom-button span {
+  margin-left: 10px; /* Space between text and arrow */
+}
+
+.custom-button svg {
+  width: 16px;
+  height: 16px;
+  fill: white; /* Arrow color */
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+ .custom-button {
+    margin-right: 0;
+    margin-left: 0;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+ .custom-button {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 480px) {
+  .custom-button {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+/* HEADING CARDS  */
+
+
+
+.heading-section h1{
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+
+.heading-section h1:hover{
+  border-bottom: 5px solid #00f7ff;
+  cursor: pointer;
+  animation: scaleUp 0.5s forwards;
+  /* animation: scaleUp 0.5s backwards; */
+  
+}
+
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.heading-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  margin-bottom: 10px;
+}
+
+/* .container{
+  max-width: 1200px;
+  margin:  auto;
+} */
+ 
+body{
+  background-color: white;
+
+}
+
+
+.card-img-top{
+  border-radius: 50px;
+  padding: 20px, 10px;
+  height: 500px;
+  /* border: 10px solid black, red; */
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px 0px rgb(36, 204, 255), -5px -5px rgb(255, 81, 0);
+}
+
+.card{
+  border-radius: 50px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, 0 10px 20px rgba(0, 0, 0, 0.19);
+  animation: scaleUp 0.9s forwards;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px 0px rgb(36, 204, 255), -10px -10px rgb(255, 81, 0);
+}
+
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.card-body{
+  padding: 25px , 12px;
+  margin-top: -200px;
+}
+
+.btn-primary{
+  border-radius: 50px;
+  width: 150px;
+}
+
+.btn-primary:hover{
+  background-color: black;
+}
+
+.col h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bolder;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  font-family: cursive;
+  transition: color 0.3s ease;
+  transform: scale(1);
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.col h1:hover{
+  color: white;
+  /* transform: scale(1.3); */
+}
+
+
+
+
+/* VIDEO  */
+
+
+/* Custom styles for the full-screen video */
+
+
+.video-container {
+position: relative;
+width: 100%;
+height: 100vh; /* Full viewport height */
+overflow: hidden;
+
+}
+.video-container video {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures the video covers the entire container */
+}
+.video-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+z-index: 1;
+}
+
+
+
+.text-center h1{
+  font-family: 'Cinzel', serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 150px;
+}
+
+
+
+
+
+
+/* BEACH TOURS CARDS  */
+
+
+
+
+
+.cary {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border: none;
+border-radius: 10px;
+transform: translate(0.5s) ease-in-out;
+
+}
+
+.cary:hover {
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+animation: scaleUp 0.5s forwards;
+/* margin-top: -50px; */
+}
+
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+  
+
+
+.cary-body {
+margin-top: -60px;
+padding: 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+
+
+
+.cary-img-top {
+  height: 220px; /* Adjust as needed */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cary-img-top:hover {
+  animation: scaleUp 0.5s forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+.cary-title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.cary-text {
+color: #000000;
+margin-bottom: 10px;
+font-size: 16px;
+line-height: 1.5;
+font-family: Arial, sans-serif;
+font-weight: bolder;
+cursor: pointer;
+font-style: italic;
+margin-left: 7px;
+text-align: center;
+transition: transform 0.5s ease-in-out;
+font-size: large;
+}
+
+.cary-text:hover {
+  animation: scaleUp 0.7s forwards;
+  /* color: #00f7ff; */
+  
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+
+.btn-primare {
+background-color: #005cd4; /* Green */
+border: none;
+color: white;
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+margin-left: 280px;
+}
+
+.btn-primare1 {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-primare2:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* RESPONSIVE STYLES  */
+
+@media screen and (max-width: 600px) {
+/* For mobile screens */
+.custom-button {
+ font-size: 14px;
+ margin-right: 0;
+ margin-left: 0;
+ top: -25px;
+ left: 50%;
+ transform: translateX(-50%);
+ }
+.heading-section h1 {
+ font-size: 30px;
+ }
+.heading-section p {
+ font-size: 14px;
+ }
+.card-img-top {
+ height: 250px;
+ }
+.card {
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }
+.card-body {
+ padding: 10px;
+ }
+ .btn-primary {
+ font-size: 12px;
+ }
+ .btn-primare {
+ font-size: 12px;
+ margin-left: 150px;
+ }
+ h5 {
+ font-size: x-large;
+ }
+ .cary-body {
+ margin-top: -40px;
+ padding: 5px;
+ }
+ .cary-img-top {
+ height: 150px;
+ }
+ .cary-title {
+ font-size: 14px;
+ }
+ .cary-text {
+ font-size: 12px;
+ }
+}
+
+
+
+
+
+
+
+/* <!-----------------------------------------------------------NEXT PAGE-------------------------------------------------------------------------> */
+
+
+                                                                /* CLIFTON BEACH  */
+
+
+
+/* RIDING CARDS  */
+
+
+.caro-img-top{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+.caro-text{
+font-style: italic;
+font-weight: bold;
+color: black;
+}
+
+
+.rid{
+text-align: center;
+font-weight: bolder;
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: underline;
+
+}
+
+
+
+.col-11{
+background-color: #f9f9f9;
+padding: 20px;
+margin-bottom: 20px;
+font-size: larger;
+}
+
+
+.fl{
+width: 100%;
+}
+
+
+.boxe {
+height: 200px;
+width: 350px;
+border: 5px solid;
+border-radius: 30px;
+margin-bottom: 50px;
+margin-top: -10px;
+margin-left: 50px;
+/* overflow-x: scroll; */
+overflow-y: scroll;
+box-sizing: border-box;
+box-shadow: 10px 10px 5px 0px rgb(36, 204, 255), -10px -10px rgb(255, 81, 0) ;
+padding: 20px;
+text-align: center;
+float: right;
+font-style: italic;
+}
+
+
+/* PRODUCT CARD HEADING  */
+
+
+
+.text h1{
+text-align: center;
+font-size: 54px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+}
+
+
+.text-with-logo img {
+width: 150px;
+height: auto;
+float: left;
+margin-right: 70px;
+margin-left: 920px;
+margin-top: -110px;
+}
+
+
+
+/* Basic reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Body styling */
+.product-card body {
+font-family: Arial, sans-serif;
+background-color:whitesmoke;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-direction: column;
+padding: 20px;
+
+}
+
+/* Container for the product cards */
+/* .product-container {
+
+} */
+
+/* Styling for each product card */
+.product-card {
+background-color: white;
+border: 10px solid whitesmoke;
+border-radius: 10px;
+
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+border-radius: 10px;
+
+}
+
+.product-card:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.product-card h3 {
+margin: 15px 0;
+font-size: 35px;
+
+font-weight: 900;
+}
+
+
+.product-card h4 {
+font-size: 30px;
+color: #888;
+font-weight: bolder;
+}
+
+.product-card p {
+color:rgb(102, 96, 96);
+margin-bottom: 15px;
+font-size: 16px;
+}
+
+/* Star rating styling */
+
+
+.star-rating {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.star-rating input {
+display: none;
+}
+
+.star-rating label {
+font-size: 30px;
+color:rgb(177, 176, 169);
+cursor: pointer;
+}
+
+/* .star-rating input:checked ~ label {
+color: orange;
+}
+
+.star-rating input:checked ~ label ~ label {
+color: orange;
+}
+
+.star-rating input:hover ~ label,
+.star-rating input:checked ~ label:hover {
+color: rgb(230, 120, 24);
+} */
+
+/* Button styling */
+.product-btn {
+background-color: rgb(233, 112, 13);
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 26px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+background-color: orange;
+}
+
+.product-btn:active {
+background-color:red;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+.product-container {
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+}
+}
+
+@media (max-width: 480px) {
+.product-container {
+  grid-template-columns: 1fr; /* 1 card per row */
+}
+
+.product-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.star-rating label {
+  font-size: 25px;
+}
+
+.product-card {
+  padding: 15px;
+}
+}
+
+
+
+
+
+p{
+color: rgba(0, 0, 0, 0.623);
+}
+
+.rating1{
+color: black !important;
+}
+
+
+
+.fl{
+width: 98.8vw;
+}
+
+
+.am{
+display: block;
+margin: 0px auto 0px auto;
+
+
+}
+
+.shop {
+  font-size: 64px;
+  font-weight: bolder;
+  color: black;
+  /* text-decoration: underline; */
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+
+
+
+                                                              /* PAGE 2  */
+
+                                                         /* HAWKE'S BAY BEACH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- ABOUT US ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact */
+
+
+
+
+.contact{
+  background: #f9f9f9;
+  padding: 50px;
+}
+.main-text h1{
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.main-text h1 span{
+  color: #47A0C2;
+}
+.contact .card{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.contact .row{
+  margin-top: 30px;
+}
+.contact form input{
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.contact form textarea{
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+.contact .submit{
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #47A0C2;
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.contact .submit:hover{
+  width: 170px;
+}
+@media (max-width:765px){
+  .contact{
+      padding: 0;
+  }
+  .main-text h1{
+      padding: 20px;
+  }
+}
+
+
+
+
+
+
+/* About Us */
+
+
+
+
+.about{
+  padding: 50px;
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.main-txt h1{
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.main-txt h1 span{
+  color: #47A0C2;
+}
+.about .image-about{
+  border-radius: 10px;
+}
+.about .image-about img{
+  border-radius: 10px;
+}
+.about h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p{
+  font-weight: 500;
+}
+#about-btn{
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #47A0C2;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover{
+  width: 170px;
+}
+@media (max-width:765px){
+  .about{
+      padding: 0;
+  }
+}
+
+
+
+
+
+
+/* FOOTER  */
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.footer-section span {
+  color: orangered;
+  font-weight: 900;
+}
+
+
+.footer h2 {
+  color: #FFA500; /* Orange Accent */
+}
+
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  /* height: 40px; */
+}
+
+
+.social-icons a {
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+  color: #FFA500; /* Orange Icons */
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  /* font-weight: bolder; */
+}
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #FFA500; /* Orange Button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.newsletter button:hover {
+  animation: disappear 2s;
+}
+
+@keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.copyright {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/* DOWNLOADING BUTTON  */
+
+
+
+
+
+
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  /* background-color: #f4f4f4; */
+  
+}
+
+
+
+.download-btn {
+  background: linear-gradient(135deg, #00e1ff, #ff6600);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #ff6600, #00e1ff);
+  transform: scale(1.05);
+}
+
+
+
+.download-btn svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
